@@ -1,53 +1,115 @@
-# Welcome to your Lovable project
+# BlockchainTPE — Simulation et Visualisation des Consensus Blockchain
 
-## Project info
+> Travail Personnel Encadré (TPE) — Master 1 IWOCS  
+> Université Le Havre Normandie · 2025-2026
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Live site**: https://blockchaintpe.netlify.app
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## À propos du projet
 
-**Use Lovable**
+Ce site présente les travaux de recherche et de simulation sur les protocoles de consensus blockchain réalisés dans le cadre du TPE de Master 1 IWOCS. L'objectif est de **rendre visible l'invisible** : simuler et comparer le comportement des trois principaux algorithmes de consensus distribué — Proof of Work (PoW), Proof of Stake (PoS) et Practical Byzantine Fault Tolerance (PBFT) — à travers des modèles multi-agents développés avec AnyLogic.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Équipe
 
-Changes made via Lovable will be committed automatically to this repo.
+| Rôle | Nom |
+|---|---|
+| Auteur | Ilyes Hammoum |
+| Auteur | Ilyas Hamama |
+| Encadrant | Claude Duvallet |
+| Encadrant | Cyrille Bertelle |
+| Encadrant | Guillaume Lambard |
+| Encadrant | Walid Ferjani |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Structure du site
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Route | Contenu |
+|---|---|
+| `/` | Landing page — Introduction, protocoles, architecture, simulation, comparatif, résultats, équipe |
+| `/docs/pow` | Documentation Javadoc complète du modèle PoW (AnyLogic) |
+| `/docs/pos` | Documentation PoS *(en préparation)* |
+| `/docs/pbft` | Documentation PBFT *(en préparation)* |
 
-Follow these steps:
+### Sections de la page d'accueil
+
+1. **Hero** — Présentation du projet et chaîne de blocs animée
+2. **Introduction** — Concepts fondamentaux et objectifs
+3. **Protocoles** — PoW, PoS et PBFT avec liens documentation et simulation
+4. **Architecture** — Modèle multi-agents (Agent Main / Nœud / Messager)
+5. **Simulation** — Paramètres et aperçu des métriques
+6. **Comparatif** — Tableau comparatif des trois protocoles
+7. **Résultats** — Résultats clés et feuille de route
+8. **Équipe** — Auteurs et encadrants
+
+---
+
+## Simulation PoW (AnyLogic Cloud)
+
+**Lien direct** : https://cloud.anylogic.com/model/9242c96b-a86c-4923-9641-b5873cdb0804
+
+Le modèle simule un réseau P2P de nœuds mineurs avec :
+- Minage PoW par incrémentation de nonce (SHA-256)
+- Propagation des blocs et résolution de forks
+- Attaques par diffusion de faux blocs
+- Perturbateur réseau cyclique (connexions/déconnexions)
+- Export des récompenses BTC pour analyse Gnuplot
+
+---
+
+## Stack technique
+
+| Technologie | Usage |
+|---|---|
+| Vite 5 + React 18 + TypeScript 5 | Base de l'application |
+| Tailwind CSS 3.4 | Styles utilitaires |
+| Framer Motion 12 | Animations |
+| React Router DOM 6 | Navigation SPA |
+| Shadcn UI (Radix) | Composants accessibles |
+| AnyLogic | Simulation multi-agents |
+
+---
+
+## Développement local
+
+Prérequis : Node.js 18+ et npm (ou bun).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Cloner le dépôt
+git clone https://github.com/hocine-dev/tpe.git
+cd tpe
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Installer les dépendances
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Lancer le serveur de développement
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Le site sera disponible sur `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+# Build de production
+npm run build
 
-**Use GitHub Codespaces**
+# Prévisualiser le build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+---
+
+## Déploiement
+
+Le site est déployé automatiquement sur **Netlify** à chaque push sur la branche `main`.
+
+```
+Site   : https://blockchaintpe.netlify.app
+Branch : main
+Build  : npm run build
+Output : dist/
+```
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
