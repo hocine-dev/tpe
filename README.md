@@ -11,18 +11,6 @@
 
 Ce site présente les travaux de recherche et de simulation sur les protocoles de consensus blockchain réalisés dans le cadre du TPE de Master 1 IWOCS. L'objectif est de **rendre visible l'invisible** : simuler et comparer le comportement des trois principaux algorithmes de consensus distribué — Proof of Work (PoW), Proof of Stake (PoS) et Practical Byzantine Fault Tolerance (PBFT) — à travers des modèles multi-agents développés avec AnyLogic.
 
-### Équipe
-
-| Rôle | Nom |
-|---|---|
-| Auteur | Ilyes Hammoum |
-| Auteur | Ilyas Hamama |
-| Encadrant | Claude Duvallet |
-| Encadrant | Cyrille Bertelle |
-| Encadrant | Guillaume Lambard |
-| Encadrant | Walid Ferjani |
-
----
 
 ## Structure du site
 
@@ -111,25 +99,3 @@ Build  : npm run build
 Output : dist/
 ```
 - Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

@@ -127,15 +127,8 @@ const TeamSection = () => {
                 <p className="text-xs text-muted-foreground mb-3">
                   Travail Personnel Encadré (TPE)
                 </p>
-                <a
-                  href="https://blockchaintpe.netlify.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 text-xs font-medium rounded-lg bg-neon-blue/[0.08] text-neon-blue border border-neon-blue/20 hover:bg-neon-blue/[0.15] transition-all duration-300"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                  Voir le projet en ligne
-                </a>
+                
+                
               </div>
             </div>
           </motion.div>

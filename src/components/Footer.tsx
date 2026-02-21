@@ -28,15 +28,7 @@ const Footer = () => {
             <span className="text-[10px] font-mono text-muted-foreground/50 border border-white/[0.06] rounded-md px-2.5 py-1">
               React + Tailwind + Framer Motion
             </span>
-            <a
-              href="https://blockchaintpe.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Projet en ligne"
-            >
-              <ExternalLink className="w-4 h-4" />
-            </a>
+           
           </div>
         </div>
       </div>
