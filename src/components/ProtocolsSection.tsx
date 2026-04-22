@@ -185,6 +185,7 @@ const protocols: Omit<ProtocolCardProps, "delay">[] = [
     example: "Ethereum 2.0, Cardano",
     color: "green",
     docPath: "/docs/pos",
+    simLink: "https://cloud.anylogic.com/model/4121eec8-1a50-45ff-b486-6852d841a568",
     points: [
       "Sélection aléatoire pondérée par le montant de stake",
       "Consommation énergétique drastiquement réduite",

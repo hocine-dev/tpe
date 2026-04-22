@@ -106,7 +106,7 @@ const ResultsSection = () => {
                   label: "PoS — Analyse & Modélisation",
                   icon: <Coins className="w-4 h-4 text-neon-green" />,
                   color: "border-neon-green/30 bg-neon-green/[0.06]",
-                  done: false,
+                  done: true,
                 },
                 {
                   month: "Avril 2026",

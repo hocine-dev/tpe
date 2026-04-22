@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import DocPoW from "./pages/DocPoW";
-import DocPoS from "./pages/DocPoS";
+import PosDoc from "./pages/PosDoc";
 import DocPBFT from "./pages/DocPBFT";
 
 const queryClient = new QueryClient();
@@ -20,7 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/docs/pow" element={<DocPoW />} />
-          <Route path="/docs/pos" element={<DocPoS />} />
+          <Route path="/docs/pos" element={<PosDoc />} />
           <Route path="/docs/pbft" element={<DocPBFT />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
