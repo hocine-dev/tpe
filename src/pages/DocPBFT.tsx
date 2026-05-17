@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Blocks, Construction, Play } from "lucide-react";
 
+const PBFT_SIMULATION_URL =
+  "https://cloud.anylogic.com/model/5110a506-ee5f-463d-91c1-09576efbfa6d?mode=SETTINGS&tab=GENERAL";
+
 const DocPBFT = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -18,13 +21,15 @@ const DocPBFT = () => {
           <span className="text-muted-foreground/30">|</span>
           <span className="text-xs font-mono text-neon-blue">Documentation</span>
         </div>
-        <button
-          disabled
-          className="inline-flex items-center gap-2 px-3 py-1.5 text-[11px] font-medium rounded-md bg-neon-blue/[0.05] text-neon-blue/40 border border-neon-blue/10 cursor-not-allowed"
+        <a
+          href={PBFT_SIMULATION_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-3 py-1.5 text-[11px] font-medium rounded-md bg-neon-blue/[0.08] text-neon-blue border border-neon-blue/20 hover:bg-neon-blue/[0.15] transition-all"
         >
           <Play className="w-3 h-3" />
-          Simulation PBFT — Bientôt
-        </button>
+          Lancer la simulation PBFT
+        </a>
       </div>
 
       {/* Header */}

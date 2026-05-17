@@ -54,7 +54,7 @@ const Navbar = () => {
 
         {/* CTA */}
         <a
-          href="https://cloud.anylogic.com/model/9242c96b-a86c-4923-9641-b5873cdb0804?mode=SETTINGS&tab=GENERAL"
+          href="https://cloud.anylogic.com/models?public=true&customSearchType=USER&customSearchData=adf6ef96-dc56-447e-bdf2-acce87be2735"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden lg:inline-flex items-center gap-2 px-4 py-2 text-xs font-medium rounded-lg bg-neon-blue/10 text-neon-blue border border-neon-blue/20 hover:bg-neon-blue/20 hover:shadow-[0_0_20px_hsl(210,100%,60%,0.15)] transition-all duration-300"

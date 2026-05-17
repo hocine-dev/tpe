@@ -205,6 +205,7 @@ const protocols: Omit<ProtocolCardProps, "delay">[] = [
     example: "Hyperledger Fabric (IBM)",
     color: "blue",
     docPath: "/docs/pbft",
+    simLink: "https://cloud.anylogic.com/model/5110a506-ee5f-463d-91c1-09576efbfa6d?mode=SETTINGS&tab=GENERAL",
     points: [
       "Réseau permissionné avec identités connues",
       "Finalité instantanée et définitive des transactions",
